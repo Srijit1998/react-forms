@@ -1,0 +1,138 @@
+.form-container{
+    background-color: #191919;
+    padding: 2rem 5rem;
+    width: 75%;
+    border-radius: 16px;
+}
+.form-container .field-container{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.form-control .form-control-label {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #c2c2c2;
+    letter-spacing: 2px;    
+}
+.form-control.password{
+    position: relative;
+}
+.form-control.password .show-icon{
+    position: absolute;
+    top: 38px;
+    right: 35px;
+    font-size: 30px;
+    color: #191919;
+    cursor: pointer;
+}
+.form-control.password .show-icon:hover{
+    opacity: 0.85;
+}
+input[type="text"],input[type="tel"],
+input[type="email"], input[type="number"], input[type="date"],
+input[type="password"]{
+    width: 90%;
+    height: 35px;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #c0c0c0;
+    font-size: 18px;
+    color: #191919;
+    font-weight: 600;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    transition: background-color 5000s;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none !important;
+}
+input[type="text"]:focus, input[type="email"]:focus, 
+input[type="number"]:focus, input[type="date"]:focus,
+input[type="tel"]:focus, input[type="password"]:focus
+{
+    outline: none;
+}
+
+.form-container .submit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container .submit .submit-btn{
+    display: inline-block;
+    width: 250px;
+    border-radius: 12px;
+    background-color: #12daa8;
+    color: #191919;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+}
+.form-container .submit .submit-btn:hover{
+    opacity: 0.85;
+}
+.form-control .error-msg{
+    margin-top: 5px;
+    color: #c72d3a;
+    letter-spacing: 1.2px;
+    font-weight: lighter;
+}
+.form-control .label-error{
+    color: #c72d3a;
+}
+.form-control .input-error{
+    border: 1px solid #c72d3a;
+}
+.form-control .terms-and-conditions{
+    margin-top: 1.5rem !important;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: flex-start;
+}
+.form-control-label .tc-link{
+    color: #12daa8;
+    cursor: pointer;
+}
+.form-control-label .tc-link:hover{
+    text-decoration: underline;
+}
+input[type="checkbox"]{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background-color: #c0c0c0;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+input[type="checkbox"]::after{
+    font-weight: 900;
+    content: "✔";
+    font-size: 15px;
+    color: #191919;
+    position: absolute;
+    left: 4px;
+    display: none;
+    
+}
+input[type="checkbox"]:checked{
+    background-color: #12daa8;
+}
+input[type="checkbox"]:checked::after{
+    display: block;
+}
